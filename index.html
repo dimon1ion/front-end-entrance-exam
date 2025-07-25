@@ -1,13 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <div id="app">
+      <main class="main container">
+        <section class="first-block">
+          <div class="first-items-block block">
+            <img class="avatar" src="public/Images/123.jpg" alt="photo" />
+          </div>
+          <div class="first-items-block block">
+            <div class="first-items-block-name">
+              <div class="name-hello">Hello 👋🏻 I’m</div>
+              <div class="name-block">
+                <p class="name">Joe Speen</p>
+                <p class="job-title">Добрый вечер</p>
+              </div>
+            </div>
+          </div>
+          <div class="first-items-block block">
+            <div class="first-items-block-languages">
+              <h1 class="languages-title">Languages</h1>
+              <div class="languages-block">
+                <div class="language-block">
+                  <p class="language-name">English</p>
+                  <input
+                    type="range"
+                    class="skill"
+                    min="0"
+                    max="100"
+                    style="--value: 100%"
+                    value="100"
+                    oninput="this.style.setProperty('--value', `${this.value}%`);"
+                  />
+                </div>
+                <div class="language-block">
+                  <p class="language-name">Malayalam</p>
+                  <input
+                    type="range"
+                    class="skill"
+                    min="0"
+                    max="100"
+                    style="--value: 100%"
+                    value="100"
+                    oninput="this.style.setProperty('--value', `${this.value}%`);"
+                  />
+                </div>
+                <div class="language-block">
+                  <p class="language-name">Hindi</p>
+                  <input
+                    type="range"
+                    class="skill"
+                    min="0"
+                    max="100"
+                    style="--value: 80%"
+                    value="80"
+                    oninput="this.style.setProperty('--value', `${this.value}%`);"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="second-block">
+          <div class="experience-block block">
+            <h1 class="experience-title">Experience</h1>
+            <div class="experience-items">
+              <div class="experience-item green">
+                <div class="experience-item-top">
+                  <p class="experience-date">Jun. 2023 - Present</p>
+                  <div
+                    class="experience-most-recent"
+                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                  >
+                    most recent
+                  </div>
+                </div>
+                <div class="experience-item-content">
+                  <div class="experience-info">
+                    <p class="experience-role">Marketing Manager</p>
+                    <p class="experience-type">Pankayam <span style="padding: 0 6px;">|</span> Full-time</p>
+                  </div>
+                  <div class="experience-text-block">
+                    <ul class="experience-text">
+                      <li>
+                        Strategy development and planning of campaigns that
+                        promote the business and generate genuine traffic
+                      </li>
+                      <li>
+                        SEO Content Creation for Blogs, Website, Social media
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-item-top">
+                  <p class="experience-date">2017 - Present</p>
+                  <div
+                    class="experience-most-recent"
+                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                  >
+                    most recent
+                  </div>
+                </div>
+                <div class="experience-item-content">
+                  <div class="experience-info">
+                    <p class="experience-role">Graphic / Web designer</p>
+                    <p class="experience-type">Freelance</p>
+                  </div>
+                  <div class="experience-text-block">
+                    <ul class="experience-text">
+                      <li>
+                        Development of internal projects from scratch, product
+                        design of brands
+                      </li>
+                      <li>Landing page, webapps and hybrid apps</li>
+                      <li>
+                        Coordinating with outside agencies, art services, web
+                        designer, marketing, printers, and colleagues as
+                        necessary.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-item-top">
+                  <p class="experience-date">Sep. 2021 - Jun. 2023</p>
+                  <div
+                    class="experience-most-recent"
+                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                  >
+                    most recent
+                  </div>
+                </div>
+                <div class="experience-item-content">
+                  <div class="experience-info">
+                    <p class="experience-role">Legal Assistant</p>
+                    <p class="experience-type">Law Firm <span style="padding: 0 6px;">|</span> Intern</p>
+                  </div>
+                  <div class="experience-text-block">
+                    <ul class="experience-text">
+                      <li>
+                        Provide administrative support to lawyer and enhance office effectiveness
+                      </li>
+                      <li>
+                        Handle communication with clients, witnesses etc.
+                      </li>
+                      <li>
+                        repare case briefs and summarize depositions, interrogatories and testimony
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tools-block block">
+            <h1 class="tools-title">Tools</h1>
+            <div class="tools-cards">
+              <div class="tools-card">
+                <p class="tools-mini-title">design</p>
+                <div class="tools-icons">
+                  <img class="icon" src="public/Icons/logoFigma.svg" alt="figma"/>
+                  <img class="icon" src="public/Icons/icon adobe photoshop_.svg" alt="adobe photoshop"/>
+                  <img class="icon" src="public/Icons/icon _adobe illustrator_.svg" alt="adobe illustrator"/>
+                  <img class="icon" src="public/Icons/icon _adobe premiere_.svg" alt="adobe premiere"/>
+                  <img class="icon" src="public/Icons/logoNotion.svg" alt="Notion"/>
+                  <img class="icon" src="public/Icons/logoMeet.svg" alt="Meet"/>
+                </div>
+              </div>
+              <div class="tools-card">
+                <p class="tools-mini-title">no-code</p>
+                <div class="tools-icons">
+                  <img class="icon" src="public/Icons/logoFigma.svg" alt="figma"/>
+                  <img class="icon" src="public/Icons/icon adobe photoshop_.svg" alt="adobe photoshop"/>
+                  <img class="icon" src="public/Icons/icon _adobe illustrator_.svg" alt="adobe illustrator"/>
+                  <img class="icon" src="public/Icons/icon _adobe premiere_.svg" alt="adobe premiere"/>
+                  <img class="icon" src="public/Icons/logoNotion.svg" alt="Notion"/>
+                  <img class="icon" src="public/Icons/logoMeet.svg" alt="Meet"/>
+                </div>
+              </div>
+              <div class="tools-card">
+                <p class="tools-mini-title">design</p>
+                <div class="tools-icons">
+                  <img class="icon" src="public/Icons/logoZapìer 1.svg" alt="zapier"/>
+                  <img class="icon" src="public/Icons/logoWebflow.svg" alt="webflow"/>
+                  <img class="icon" src="public/Icons/logoFramer.svg" alt="framer"/>
+                  <img class="icon" src="public/Icons/logoWordpress.svg" alt="wordpress"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" defer src="./js/main.js"></script>
   </body>
 </html>
