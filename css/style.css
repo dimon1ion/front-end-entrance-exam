@@ -21,6 +21,10 @@ ul:hover:not(:focus) {
   cursor: pointer;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -29,6 +33,7 @@ ul:hover:not(:focus) {
 
 .container {
   max-width: 555px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -62,7 +67,6 @@ ul:hover:not(:focus) {
   object-fit: contain;
   border-radius: 12px;
   user-select: none;
-  -webkit-user-drag: none;
 }
 
 .first-items-block-name {
@@ -202,16 +206,6 @@ h1 {
   transition: all 0.25s;
 }
 
-.experience-item.green {
-  background-color: #28d979;
-  transition: all 0.25s;
-}
-
-.experience-item.green * {
-  color: #fff;
-  transition: all 0.25s;
-}
-
 .experience-item-top {
   display: flex;
   justify-content: space-between;
@@ -282,6 +276,10 @@ h1 {
   /* word-spacing: 6px; */
 }
 
+.green .experience-type {
+  color: #fff;
+}
+
 .experience-text-block {
   width: 239px;
 }
@@ -344,10 +342,189 @@ h1 {
 .tools-icons {
   display: grid;
   grid-template-columns: repeat(2, 16px);
+  justify-items: center;
+  align-items: center;
   gap: 16px;
   padding-top: 5px;
   padding-bottom: 16px;
 }
+
+.third-block {
+  display: flex;
+  column-gap: 20px;
+}
+
+.education-title {
+  margin-bottom: 16px;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+.education-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  width: 116px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.education-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-card-date,
+.education-card-info-title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.green .education-heart {
+  opacity: 1;
+  fill: #f6ed1e;
+  transition: fill 0.25s;
+}
+
+.education-heart {
+  opacity: 0;
+  fill: #fff;
+  transition: opacity 0.25s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.education-card:hover:not(.green) .education-heart {
+  opacity: 1;
+  filter: drop-shadow(0 0 2px #000);
+  transition: filter 0.2s;
+}
+
+.education-card:hover:not(.green) .education-heart:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 3px #000);
+  transition: filter 0.2s;
+}
+
+.education-tags {
+  color: #149063;
+}
+
+.green .education-tags {
+  color: #fff;
+}
+
+.education-tags,
+.education-card-place {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+}
+
+.green {
+  background-color: #28d979;
+  color: #fff;
+  transition: all 0.25s;
+}
+
+.green * {
+  color: #fff;
+}
+
+.interests-contact-block {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+  background-color: #fff;
+  gap: 20px;
+}
+
+.interests-title {
+  margin-bottom: 16px;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest {
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  background-color: #fff;
+  padding: 4px 10px;
+  text-align: center;
+  width: fit-content;
+  border-radius: 40px;
+}
+
+.contact-block {
+  padding: 12px;
+  background-color: #000;
+  width: 267px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 92px;
+}
+
+.contact-message {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.contact-mail {
+  font-size: 10px;
+  line-height: 150%;
+  color: #DDDDDD;
+}
+
+.download-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button {
+  padding: 12px 6px;
+  background-color: #28d979;
+  color: #fff;
+  transition: background-color .2s;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.download-button:hover {
+  background-color: #149063;
+  transition: background-color .2s;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.download-button:active {
+  color: #000;
+  transform: scale(0.98);
+  transition: all .2s;
+}
+
+
 
 /* 
 :root {

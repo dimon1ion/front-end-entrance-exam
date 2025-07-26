@@ -12,21 +12,22 @@
       rel="stylesheet"
     />
     <title>Vite App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
   </head>
 
   <body>
     <div id="app">
-      <main class="main container">
+      <main class="main container" id="main">
         <section class="first-block">
           <div class="first-items-block block">
-            <img class="avatar" src="public/Images/123.jpg" alt="photo" />
+            <img class="avatar" src="public/Images/profileImg.png" alt="photo" />
           </div>
           <div class="first-items-block block">
             <div class="first-items-block-name">
               <div class="name-hello">Hello 👋🏻 I’m</div>
               <div class="name-block">
-                <p class="name">Joe Speen</p>
-                <p class="job-title">Добрый вечер</p>
+                <p class="name">Karthik SR</p>
+                <p class="job-title">UX/UI Designer</p>
               </div>
             </div>
           </div>
@@ -83,7 +84,7 @@
                   <p class="experience-date">Jun. 2023 - Present</p>
                   <div
                     class="experience-most-recent"
-                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                    onclick="this.closest('.experience-item').classList.toggle('green')"
                   >
                     most recent
                   </div>
@@ -91,7 +92,9 @@
                 <div class="experience-item-content">
                   <div class="experience-info">
                     <p class="experience-role">Marketing Manager</p>
-                    <p class="experience-type">Pankayam <span style="padding: 0 6px;">|</span> Full-time</p>
+                    <p class="experience-type">
+                      Pankayam <span style="padding: 0 6px">|</span> Full-time
+                    </p>
                   </div>
                   <div class="experience-text-block">
                     <ul class="experience-text">
@@ -111,7 +114,7 @@
                   <p class="experience-date">2017 - Present</p>
                   <div
                     class="experience-most-recent"
-                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                    onclick="this.closest('.experience-item').classList.toggle('green')"
                   >
                     most recent
                   </div>
@@ -142,7 +145,7 @@
                   <p class="experience-date">Sep. 2021 - Jun. 2023</p>
                   <div
                     class="experience-most-recent"
-                    onclick="this.parentElement.parentElement.classList.toggle('green')"
+                    onclick="this.closest('.experience-item').classList.toggle('green')"
                   >
                     most recent
                   </div>
@@ -150,18 +153,20 @@
                 <div class="experience-item-content">
                   <div class="experience-info">
                     <p class="experience-role">Legal Assistant</p>
-                    <p class="experience-type">Law Firm <span style="padding: 0 6px;">|</span> Intern</p>
+                    <p class="experience-type">
+                      Law Firm <span style="padding: 0 6px">|</span> Intern
+                    </p>
                   </div>
                   <div class="experience-text-block">
                     <ul class="experience-text">
                       <li>
-                        Provide administrative support to lawyer and enhance office effectiveness
+                        Provide administrative support to lawyer and enhance
+                        office effectiveness
                       </li>
+                      <li>Handle communication with clients, witnesses etc.</li>
                       <li>
-                        Handle communication with clients, witnesses etc.
-                      </li>
-                      <li>
-                        repare case briefs and summarize depositions, interrogatories and testimony
+                        repare case briefs and summarize depositions,
+                        interrogatories and testimony
                       </li>
                     </ul>
                   </div>
@@ -175,40 +180,195 @@
               <div class="tools-card">
                 <p class="tools-mini-title">design</p>
                 <div class="tools-icons">
-                  <img class="icon" src="public/Icons/logoFigma.svg" alt="figma"/>
-                  <img class="icon" src="public/Icons/icon adobe photoshop_.svg" alt="adobe photoshop"/>
-                  <img class="icon" src="public/Icons/icon _adobe illustrator_.svg" alt="adobe illustrator"/>
-                  <img class="icon" src="public/Icons/icon _adobe premiere_.svg" alt="adobe premiere"/>
-                  <img class="icon" src="public/Icons/logoNotion.svg" alt="Notion"/>
-                  <img class="icon" src="public/Icons/logoMeet.svg" alt="Meet"/>
+                  <img
+                    class="icon"
+                    src="public/Icons/logoFigma.svg"
+                    alt="figma"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/icon adobe photoshop_.svg"
+                    alt="adobe photoshop"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/icon _adobe illustrator_.svg"
+                    alt="adobe illustrator"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/icon _adobe premiere_.svg"
+                    alt="adobe premiere"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoNotion.svg"
+                    alt="Notion"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoMeet.svg"
+                    alt="Meet"
+                  />
                 </div>
               </div>
               <div class="tools-card">
                 <p class="tools-mini-title">no-code</p>
                 <div class="tools-icons">
-                  <img class="icon" src="public/Icons/logoFigma.svg" alt="figma"/>
-                  <img class="icon" src="public/Icons/icon adobe photoshop_.svg" alt="adobe photoshop"/>
-                  <img class="icon" src="public/Icons/icon _adobe illustrator_.svg" alt="adobe illustrator"/>
-                  <img class="icon" src="public/Icons/icon _adobe premiere_.svg" alt="adobe premiere"/>
-                  <img class="icon" src="public/Icons/logoNotion.svg" alt="Notion"/>
-                  <img class="icon" src="public/Icons/logoMeet.svg" alt="Meet"/>
+                  <img
+                    class="icon"
+                    src="public/Icons/logoZapìer 1.svg"
+                    alt="zapier"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoWebflow.svg"
+                    alt="webflow"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoFramer.svg"
+                    alt="framer"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoWordpress.svg"
+                    alt="wordpress"
+                  />
                 </div>
               </div>
               <div class="tools-card">
-                <p class="tools-mini-title">design</p>
+                <p class="tools-mini-title">artoficial intelligence</p>
                 <div class="tools-icons">
-                  <img class="icon" src="public/Icons/logoZapìer 1.svg" alt="zapier"/>
-                  <img class="icon" src="public/Icons/logoWebflow.svg" alt="webflow"/>
-                  <img class="icon" src="public/Icons/logoFramer.svg" alt="framer"/>
-                  <img class="icon" src="public/Icons/logoWordpress.svg" alt="wordpress"/>
+                  <img
+                    class="icon"
+                    src="public/Icons/logoChatGPT 1.svg"
+                    alt="chat gpt"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoCopilot 1.svg"
+                    alt="copilot"
+                  />
+                  <img
+                    class="icon"
+                    src="public/Icons/logoMidjourney 1.svg"
+                    alt="midjourney"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="third-block">
+          <div class="education-block block">
+            <h1 class="education-title">Education</h1>
+            <div class="education-cards">
+              <div class="education-card green">
+                <div class="education-card-top">
+                  <p class="education-card-date">2023</p>
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    class="education-heart"
+                    fill="#f6ed1e"
+                    xmlns="http://www.w3.org/2000/svg"
+                    onclick="this.closest('.education-card').classList.toggle('green')"
+                  >
+                    <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                    />
+                  </svg>
+                </div>
+                <div class="education-card-info">
+                  <p class="education-card-info-title">UI/UX</p>
+                  <p class="education-tags">
+                    #UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux
+                  </p>
+                </div>
+                <p class="education-card-place">Coursera</p>
+              </div>
+              <div class="education-card">
+                <div class="education-card-top">
+                  <p class="education-card-date">2017 - 2022</p>
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    class="education-heart"
+                    fill="#f6ed1e"
+                    xmlns="http://www.w3.org/2000/svg"
+                    onclick="this.closest('.education-card').classList.toggle('green')"
+                  >
+                    <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                    />
+                  </svg>
+                </div>
+                <div class="education-card-info">
+                  <p class="education-card-info-title">Law</p>
+                  <p class="education-tags">
+                    #law #legalStudies #contracts #internationalLaws
+                  </p>
+                </div>
+                <p class="education-card-place">University of Kerala</p>
+              </div>
+              <div class="education-card">
+                <div class="education-card-top">
+                  <p class="education-card-date">2017</p>
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    class="education-heart"
+                    fill="#f6ed1e"
+                    xmlns="http://www.w3.org/2000/svg"
+                    onclick="this.closest('.education-card').classList.toggle('green')"
+                  >
+                    <path
+                      d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6838 5.0046 11 4.33029 11 3.55965C11 2.80277 10.6838 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                    />
+                  </svg>
+                </div>
+                <div class="education-card-info">
+                  <p class="education-card-info-title">Graphic design</p>
+                  <p class="education-tags">
+                    #branding #web #illustration #adobe
+                  </p>
+                </div>
+                <p class="education-card-place">Coursrea</p>
+              </div>
+            </div>
+          </div>
+          <div class="interests-contact-block">
+            <div class="interests-block block">
+              <h1 class="interests-title">Interests</h1>
+              <div class="interests">
+                <p class="interest">branding</p>
+                <p class="interest">design</p>
+                <p class="interest">photography</p>
+                <p class="interest">artificial intelligence</p>
+                <p class="interest">illustration</p>
+                <p class="interest">typography</p>
+                <p class="interest">social networks</p>
+                <p class="interest">research</p>
+                <p class="interest">dron pilot</p>
+                <p class="interest">games</p>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-message">
+                Let´s chat! I´m ready to work on excinting projects
+              </div>
+              <div class="contact-mail">srkarthik.designscape@gmail.com</div>
+            </div>
+          </div>
+        </section>
       </main>
+      <div class="download-block"><button class="download-button" id="download-pdf">Download</button></div>
     </div>
 
-    <script type="module" defer src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
