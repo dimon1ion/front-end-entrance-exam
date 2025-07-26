@@ -491,20 +491,21 @@ h1 {
 .contact-mail {
   font-size: 10px;
   line-height: 150%;
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 .download-block {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .download-button {
   padding: 12px 6px;
   background-color: #28d979;
   color: #fff;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
   outline: none;
   border: none;
   border-radius: 12px;
@@ -513,7 +514,7 @@ h1 {
 
 .download-button:hover {
   background-color: #149063;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
   width: fit-content;
   cursor: pointer;
 }
@@ -521,10 +522,8 @@ h1 {
 .download-button:active {
   color: #000;
   transform: scale(0.98);
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
-
 
 /* 
 :root {

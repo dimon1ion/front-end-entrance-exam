@@ -1,5 +1,5 @@
-const style = document.createElement('style');
-style.id = 'print-cleanup-style';
+const style = document.createElement("style");
+style.id = "print-cleanup-style";
 style.textContent = `
   * {
     filter: none !important;
@@ -16,12 +16,11 @@ function addPrintCleanupStyles() {
 }
 
 function removePrintCleanupStyles() {
-  const existingStyle = document.getElementById('print-cleanup-style');
+  const existingStyle = document.getElementById("print-cleanup-style");
   if (existingStyle) {
     existingStyle.remove();
   }
 }
-
 
 export function downloadPdf() {
   document.getElementById("download-pdf").addEventListener("click", () => {
@@ -34,8 +33,12 @@ export function downloadPdf() {
       html2canvas: { scale: 2 },
       jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
     };
-    html2pdf().from(main).set(opt).save().then(() => {
+    html2pdf()
+      .from(main)
+      .set(opt)
+      .save()
+      .then(() => {
         removePrintCleanupStyles();
-    });
+      });
   });
 }
